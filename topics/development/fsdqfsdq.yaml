@@ -1,0 +1,15 @@
+apiVersion: "kafka.jikkou.io/v1"
+kind: KafkaTopic
+metadata:
+  name: 'fsdqfsdq'
+  labels:
+    environment: 'development'
+    owner: 'fqsdfqsd'
+    managed-by: kestra
+    execution-id: '2Gg0sbmDvj8IuN9MlJ7Oe9'
+spec:
+  partitions: 6
+  replicas: 3
+  configs:
+    retention.ms: 172800000
+    cleanup.policy: 'delete'
