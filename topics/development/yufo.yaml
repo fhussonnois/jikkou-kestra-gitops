@@ -1,0 +1,15 @@
+apiVersion: "kafka.jikkou.io/v1"
+kind: KafkaTopic
+metadata:
+  name: 'yufo'
+  labels:
+    environment: 'development'
+    owner: 'ugmui'
+    managed-by: kestra
+    execution-id: '2HwS9rDo0zjToBkTYY8fqY'
+spec:
+  partitions: 6
+  replicas: 3
+  configs:
+    retention.ms: 172800000
+    cleanup.policy: 'delete'
