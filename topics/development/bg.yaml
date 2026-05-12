@@ -1,0 +1,15 @@
+apiVersion: "kafka.jikkou.io/v1"
+kind: KafkaTopic
+metadata:
+  name: 'bg'
+  labels:
+    environment: 'development'
+    owner: 'bfg'
+    managed-by: kestra
+    execution-id: '2UWnOzjk7g4H2KNhym0Cqo'
+spec:
+  partitions: 6
+  replicas: 3
+  configs:
+    retention.ms: 172800000
+    cleanup.policy: 'delete'
