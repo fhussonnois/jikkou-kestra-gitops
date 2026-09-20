@@ -1,0 +1,15 @@
+apiVersion: "kafka.jikkou.io/v1"
+kind: KafkaTopic
+metadata:
+  name: 'zoom'
+  labels:
+    environment: 'development'
+    owner: 'Florian'
+    managed-by: kestra
+    execution-id: '5aZ8fpHyQVzI4ByKmMevvC'
+spec:
+  partitions: 2
+  replicas: 2
+  configs:
+    retention.ms: 172800000
+    cleanup.policy: 'delete'
